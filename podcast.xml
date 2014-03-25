@@ -20,7 +20,7 @@ layout: nil
 	<itunes:name>Jeremia Kimelman</itunes:name>
 	<itunes:email>jeremia@codeforamerica.org</itunes:email>
 </itunes:owner>
-<itunes:image href="http://civiccast.github.io/static-stuff/images/cctwitter.png" />
+<itunes:image href="http://civiccast.github.io/static-stuff/images/cclarge1400.png" />
 <itunes:category text="Technology" />
 
  {% for post in site.posts limit:10 %}
@@ -30,7 +30,7 @@ layout: nil
  <itunes:author></itunes:author>
  <itunes:subtitle>CivicCast: {{ post.title }}</itunes:subtitle>
  <itunes:summary>{{ post.excerpt | strip_html }}</itunes:summary>
- <itunes:image href="http://civiccast.github.io/static-stuff/images/cctwitter.png"/>
+ <itunes:image href="http://civiccast.github.io/static-stuff/images/cclarge1400.png"/>
  <enclosure url="http://civiccast.github.io/static-stuff/{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
  <guid>{{ site.url }}{{ post.url }}</guid>
  <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
