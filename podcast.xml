@@ -29,10 +29,10 @@ layout: nil
  <title>{{ post.title }}</title>
  <itunes:author></itunes:author>
  <itunes:subtitle>CivicCast: {{ post.title }}</itunes:subtitle>
- <itunes:summary>{{ post.description }}</itunes:summary>
+ <itunes:summary>{{ post.excerpt }}</itunes:summary>
  <itunes:image href="http://civiccast.github.io/static-stuff/images/cctwitter.png"/>
  <enclosure url="http://civiccast.github.io/static-stuff/{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
- <guid>http://civiccast.github.io/static-stuff/{{ post.link }}</guid>
+ <guid>{{ site.url }}{{ post.url }}</guid>
  <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
  <itunes:keywords></itunes:keywords>
  </item>
