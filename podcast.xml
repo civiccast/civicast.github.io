@@ -8,7 +8,7 @@ layout: nil
 
 <channel>
 <title>CivicCast</title>
-<link></link>
+<link>http://civiccast.us</link>
 <language>en-us</language>
 <copyright>&#xA9; 2014 Jeremia Kimelman &amp; Jason Denizac</copyright>
 <itunes:subtitle></itunes:subtitle>
@@ -17,8 +17,8 @@ layout: nil
 <itunes:summary>CivicCast is a podcast featuring interviews with the brightest and most creative minds at the forefront of improving the urban experience in the 21st century. Covering civic technology, creative intervention, and empathetic urbanism, each episode we'll bring you fresh stories and ideas in 20 minutes or less.</itunes:summary>
 <description></description>
 <itunes:owner>
-	<itunes:name></itunes:name>
-	<itunes:email></itunes:email>
+	<itunes:name>Jeremia Kimelman</itunes:name>
+	<itunes:email>jeremia@codeforamerica.org</itunes:email>
 </itunes:owner>
 <itunes:image href="http://civiccast.github.io/static-stuff/images/cctwitter.png" />
 <itunes:category text="Technology" />
@@ -29,7 +29,7 @@ layout: nil
  <title>{{ post.title }}</title>
  <itunes:author></itunes:author>
  <itunes:subtitle>CivicCast: {{ post.title }}</itunes:subtitle>
- <itunes:summary>{{ post.excerpt }}</itunes:summary>
+ <itunes:summary>{{ post.excerpt | strip_html }}</itunes:summary>
  <itunes:image href="http://civiccast.github.io/static-stuff/images/cctwitter.png"/>
  <enclosure url="http://civiccast.github.io/static-stuff/{{ post.link }}" length="{{ post.length }}" type="audio/mp3"/>
  <guid>{{ site.url }}{{ post.url }}</guid>
