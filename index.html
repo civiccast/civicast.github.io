@@ -21,8 +21,18 @@
       <div class="inner">
 
         <header>
-          <h1>CivicCast</h1>
-          <h2>a podcast for engaged citizens</h2>
+          <div class="titles">
+            <h1>CivicCast</h1>
+            <h2>a podcast for engaged citizens</h2>
+          </div>
+          <div class="links">
+          <ul>
+            <li><a href="http://feeds.feedburner.com/civiccast"><span aria-hidden="true" class="icon-rss"></span></a></li>
+            <li><a href="https://itunes.apple.com/us/podcast/civiccast/id848606051"><span aria-hidden="true" class="icon-apple"></span></a></li>
+            <li><a href="http://www.twitter.com/civiccast"><span aria-hidden="true" class="icon-twitter"></span></a></li>
+            <li><a href="http://www.github.com/civiccast"><span aria-hidden="true" class="icon-github"></span></a></li>
+          </ul>
+        </div>
         </header>
 
         <hr>
@@ -50,6 +60,7 @@
             {% for post in site.posts | reverse %}
             <li class="post">
               <h3>{{ post.title }}</h3>
+              <h4>Recorded on {{ post.date | date: "%F" }}</h4>
               {{ post.content }}
               <audio src="http://civiccast.github.io/static-stuff/{{ post.link }}" controls>Your browser doesn't support <code>audio</code>. Check out the epsiode <a href="http://civiccast.github.io/static-stuff/{{ post.link }}">here</a></audio>
             </li>
