@@ -103,6 +103,8 @@ header h2 {
   color: #aaa;
   font-weight: normal;
   line-height: 1.3;
+  clear: left;
+  margin-left: -20px;
 }
 
 header span {
@@ -113,7 +115,7 @@ header span {
 
 .inner header ul {
   clear:both;
-  margin-top:50px;
+  margin-top:70px;
 }
 .inner header li {
   list-style:none;
